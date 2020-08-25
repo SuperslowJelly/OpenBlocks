@@ -218,7 +218,7 @@ public class TileEntityGoldenEgg extends SyncedTileEntity implements IPlaceAware
 
 	private void explode() {
 		world.setBlockToAir(pos);
-		world.createExplosion(null, 0.5 + pos.getX(), 0.5 + pos.getY(), 0.5 + pos.getZ(), 2, true);
+		//world.createExplosion(null, 0.5 + pos.getX(), 0.5 + pos.getY(), 0.5 + pos.getZ(), 2, true);
 		EntityMiniMe miniMe = new EntityMiniMe(world, MoreObjects.firstNonNull(owner, MR_GLITCH));
 		miniMe.setPositionAndRotation(0.5 + pos.getX(), 0.5 + pos.getY(), 0.5 + pos.getZ(), 0, 0);
 		world.spawnEntity(miniMe);
